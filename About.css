@@ -1,0 +1,19 @@
+.web-name {
+  margin-right: 100px;
+}
+.btn {
+  margin-left: 100px;
+}
+.navbar {
+  font-size: 20px;
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+}
+.nav-link {
+  margin-left: 20px;
+  color: white;
+}
+.Btn1 {
+  margin-left: 650px;
+}

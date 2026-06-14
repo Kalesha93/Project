@@ -1,0 +1,835 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="Home.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Simple Navbar -->
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top">
+      <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand fw-bold text-danger fs-4" href="Home.html">
+          SK Academy
+        </a>
+
+        <!-- Mobile Menu Button -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navMenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Menu Links -->
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="Home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="About.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="classes.html">Classes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item ms-lg-3">
+              <a class="btn btn-danger px-4" href="contact.html">Join Now</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Featured Classes -->
+    <!-- All Classes Section -->
+    <section class="py-5">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h6 class="text-danger fw-bold">ALL CLASSES</h6>
+          <h2 class="display-6 fw-bold">15 Dance Styles to Choose From</h2>
+          <p class="text-muted">
+            Beginner to advanced levels. Certification available.
+          </p>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="text-center mb-5">
+          <button
+            class="btn btn-danger btn-sm m-1 filter-btn active"
+            data-filter="all"
+          >
+            All Classes
+          </button>
+          <button
+            class="btn btn-outline-danger btn-sm m-1 filter-btn"
+            data-filter="#classical"
+          >
+            Classical
+          </button>
+          <button
+            class="btn btn-outline-danger btn-sm m-1 filter-btn"
+            data-filter="western"
+          >
+            Western
+          </button>
+          <button
+            class="btn btn-outline-danger btn-sm m-1 filter-btn"
+            data-filter="fitness"
+          >
+            Fitness
+          </button>
+          <button
+            class="btn btn-outline-danger btn-sm m-1 filter-btn"
+            data-filter="kids"
+          >
+            Kids
+          </button>
+        </div>
+
+        <div class="row g-4" id="classesGrid">
+          <!-- 1. Bharatanatyam -->
+          <div class="col-lg-4 col-md-6 class-item" data-category="classical">
+            <div class="card border-0 shadow-sm h-100 class-card">
+              <img
+                src="classical.jpg"
+                class="card-img-top"
+                alt="Bharatanatyam"
+              />
+              <div class="card-body p-4">
+                <span class="badge bg-danger mb-2">Classical</span>
+                <h5 class="fw-bold">Bharatanatyam</h5>
+                <p class="text-muted small">
+                  Ancient Indian classical form. Adavus, mudras, abhinaya with
+                  grade exams.
+                </p>
+                <div
+                  class="d-flex justify-content-between text-muted small mb-3"
+                >
+                  <span><i class="bi bi-person"></i> 5+ Years</span>
+                  <span><i class="bi bi-clock"></i> Mon, Wed, Fri</span>
+                </div>
+                <a
+                  href="classes.html#bharatanatyam"
+                  class="btn btn-outline-danger btn-sm w-50"
+                  >View Details</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. Kathak -->
+          <div class="col-lg-4 col-md-6 class-item" data-category="classical">
+            <div class="card border-0 shadow-sm h-100 class-card">
+              <img src="kathak.avif" class="card-img-top" alt="Kathak" />
+              <div class="card-body p-4">
+                <span class="badge bg-danger mb-2">Classical</span>
+                <h5 class="fw-bold">Kathak</h5>
+                <p class="text-muted small">
+                  North Indian classical with spins, footwork & storytelling.
+                  Lucknow gharana.
+                </p>
+                <div
+                  class="d-flex justify-content-between text-muted small mb-3"
+                >
+                  <span><i class="bi bi-person"></i> 7+ Years</span>
+                  <span><i class="bi bi-clock"></i> Wed, Sat</span>
+                </div>
+                <a
+                  href="classes.html#kathak"
+                  class="btn btn-outline-danger btn-sm w-50"
+                  >View Details</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. Kuchipudi -->
+          <div class="col-lg-4 col-md-6 class-item" data-category="classical">
+            <div class="card border-0 shadow-sm h-100 class-card">
+              <img
+                src="kuchipudi.jpg"
+                class="card-img-top kathak"
+                alt="Kuchipudi"
+              />
+              <div class="card-body p-4">
+                <span class="badge bg-danger mb-2">Classical</span>
+                <h5 class="fw-bold">Kuchipudi</h5>
+                <p class="text-muted small">
+                  AP traditional dance-drama form. Tarangam plate dance special
+                  training.
+                </p>
+                <div
+                  class="d-flex justify-content-between text-muted small mb-3"
+                >
+                  <span><i class="bi bi-person"></i> 6+ Years</span>
+                  <span><i class="bi bi-clock"></i> Tue, Thu</span>
+                </div>
+                <a
+                  href="classes.html#kuchipudi"
+                  class="btn btn-outline-danger btn-sm w-50"
+                  >View Details</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- 4. Hip-Hop -->
+          <div class="col-lg-4 col-md-6 class-item" data-category="western">
+            <div class="card border-0 shadow-sm h-100 class-card">
+              <img src="hiphop.jpg" class="card-img-top" alt="Hip Hop" />
+              <div class="card-body p-4">
+                <span class="badge bg-dark mb-2">Western</span>
+                <h5 class="fw-bold">Hip-Hop & Street</h5>
+                <p class="text-muted small">
+                  Popping, Locking, Breaking, House. Battle training for
+                  competitions.
+                </p>
+                <div
+                  class="d-flex justify-content-between text-muted small mb-3"
+                >
+                  <span><i class="bi bi-person"></i> 8+ Years</span>
+                  <span><i class="bi bi-clock"></i> Tue, Thu, Sat</span>
+                </div>
+                <a
+                  href="classes.html#hiphop"
+                  class="btn btn-outline-danger btn-sm w-50"
+                  >View Details</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- 5. Contemporary -->
+          <div class="col-lg-4 col-md-6 class-item" data-category="western">
+            <div class="card border-0 shadow-sm h-100 class-card">
+              <img
+                src="contemporary.jpg"
+                class="card-img-top"
+                alt="Contemporary"
+              />
+              <div class="card-body p-4">
+                <span class="badge bg-primary mb-2">Western</span>
+                <h5 class="fw-bold">Contemporary</h5>
+                <p class="text-muted small">
+                  Blend of ballet, jazz & modern. Floor work & emotional
+                  expression.
+                </p>
+                <div
+                  class="d-flex justify-content-between text-muted small mb-3"
+                >
+                  <span><i class="bi bi-person"></i> 10+ Years</span>
+                  <span><i class="bi bi-clock"></i> Tue, Thu, Sun</span>
+                </div>
+                <a
+                  href="classes.html#contemporary"
+                  class="btn btn-outline-danger btn-sm w-50"
+                  >View Details</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- 6. Jazz -->
+          <div class="col-lg-4 col-md-6 class-item" data-category="western">
+            <div class="card border-0 shadow-sm h-100 class-card">
+              <img src="jazz.jpg" class="card-img-top" alt="Jazz Dance" />
+              <div class="card-body p-4">
+                <span class="badge bg-primary mb-2">Western</span>
+                <h5 class="fw-bold">Jazz Funk</h5>
+                <p class="text-muted small">
+                  High energy, sharp moves. Popular in commercials & music
+                  videos.
+                </p>
+                <div
+                  class="d-flex justify-content-between text-muted small mb-3"
+                >
+                  <span><i class="bi bi-person"></i> 9+ Years</span>
+                  <span><i class="bi bi-clock"></i> Mon, Wed</span>
+                </div>
+                <a
+                  href="classes.html#jazz"
+                  class="btn btn-outline-danger btn-sm w-50"
+                  >View Details</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- 7. Bollywood -->
+          <div class="col-lg-4 col-md-6 class-item" data-category="western">
+            <div class="card border-0 shadow-sm h-100 class-card">
+              <img
+                src="bollywooddance.jpg"
+                class="card-img-top"
+                alt="Bollywood"
+              />
+              <div class="card-body p-4">
+                <span class="badge bg-warning text-dark mb-2">Filmy</span>
+                <h5 class="fw-bold">Bollywood Dance</h5>
+                <p class="text-muted small">
+                  Latest trending songs. Mix of filmy, semi-classical, freestyle
+                  moves.
+                </p>
+                <div
+                  class="d-flex justify-content-between text-muted small mb-3"
+                >
+                  <span><i class="bi bi-person"></i> 6+ Years</span>
+                  <span><i class="bi bi-clock"></i> All Days</span>
+                </div>
+                <a
+                  href="classes.html#bollywood"
+                  class="btn btn-outline-danger btn-sm w-50"
+                  >View Details</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- 8. Salsa -->
+          <div class="col-lg-4 col-md-6 class-item" data-category="western">
+            <div class="card border-0 shadow-sm h-100 class-card">
+              <img src="salsa.jpg" class="card-img-top" alt="Salsa" />
+              <div class="card-body p-4">
+                <span class="badge bg-secondary mb-2">Couple Dance</span>
+                <h5 class="fw-bold">Salsa & Bachata</h5>
+                <p class="text-muted small">
+                  Latin social dance. Partner work & spins. No partner needed to
+                  join.
+                </p>
+                <div
+                  class="d-flex justify-content-between text-muted small mb-3"
+                >
+                  <span><i class="bi bi-person"></i> 18+ Years</span>
+                  <span><i class="bi bi-clock"></i> Sat, Sun</span>
+                </div>
+                <a
+                  href="classes.html#salsa"
+                  class="btn btn-outline-danger btn-sm w-50"
+                  >View Details</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- 9. Zumba -->
+          <div class="col-lg-4 col-md-6 class-item" data-category="fitness">
+            <div class="card border-0 shadow-sm h-100 class-card">
+              <img src="zumba.jpg" class="card-img-top" alt="Zumba" />
+              <div class="card-body p-4">
+                <span class="badge bg-success mb-2">Fitness</span>
+                <h5 class="fw-bold">Zumba Fitness</h5>
+                <p class="text-muted small">
+                  Dance workout with Latin beats. Burn 500+ calories. Ladies
+                  batch.
+                </p>
+                <div
+                  class="d-flex justify-content-between text-muted small mb-3"
+                >
+                  <span><i class="bi bi-person"></i> 16+ Years</span>
+                  <span><i class="bi bi-clock"></i> Mon-Sat</span>
+                </div>
+                <a
+                  href="classes.html#zumba"
+                  class="btn btn-outline-danger btn-sm w-50"
+                  >View Details</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- 10. Aerobics -->
+          <div class="col-lg-4 col-md-6 class-item" data-category="fitness">
+            <div class="card border-0 shadow-sm h-100 class-card">
+              <img src="aerobics.jpg" class="card-img-top" alt="Aerobics" />
+              <div class="card-body p-4">
+                <span class="badge bg-success mb-2">Fitness</span>
+                <h5 class="fw-bold">Dance Aerobics</h5>
+                <p class="text-muted small">
+                  Cardio workout with dance moves. Weight loss & stamina
+                  building.
+                </p>
+                <div
+                  class="d-flex justify-content-between text-muted small mb-3"
+                >
+                  <span><i class="bi bi-person"></i> 15+ Years</span>
+                  <span><i class="bi bi-clock"></i> Morning 7AM</span>
+                </div>
+                <a
+                  href="classes.html#aerobics"
+                  class="btn btn-outline-danger btn-sm w-50"
+                  >View Details</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- 11. Kids Freestyle -->
+          <div class="col-lg-4 col-md-6 class-item" data-category="kids">
+            <div class="card border-0 shadow-sm h-100 class-card">
+              <img src="kidsdance.jpg" class="card-img-top" alt="Kids Dance" />
+              <div class="card-body p-4">
+                <span class="badge bg-info text-dark mb-2">Kids Special</span>
+                <h5 class="fw-bold">Kids Freestyle</h5>
+                <p class="text-muted small">
+                  Fun moves for 3-8 years. Rhythm, coordination & confidence
+                  building.
+                </p>
+                <div
+                  class="d-flex justify-content-between text-muted small mb-3"
+                >
+                  <span><i class="bi bi-person"></i> 3-8 Years</span>
+                  <span><i class="bi bi-clock"></i> Mon, Wed, Fri</span>
+                </div>
+                <a
+                  href="classes.html#kids"
+                  class="btn btn-outline-danger btn-sm w-50"
+                  >View Details</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- 12. Folk Dance -->
+          <div class="col-lg-4 col-md-6 class-item" data-category="classical">
+            <div class="card border-0 shadow-sm h-100 class-card">
+              <img src="indianfolk.jpg" class="card-img-top" alt="Folk Dance" />
+              <div class="card-body p-4">
+                <span class="badge bg-success mb-2">Traditional</span>
+                <h5 class="fw-bold">Indian Folk</h5>
+                <p class="text-muted small">
+                  Bhangra, Garba, Kolattam, Dandiya. High-energy group
+                  performances.
+                </p>
+                <div
+                  class="d-flex justify-content-between text-muted small mb-3"
+                >
+                  <span><i class="bi bi-person"></i> 8+ Years</span>
+                  <span><i class="bi bi-clock"></i> Sat, Sun</span>
+                </div>
+                <a
+                  href="classes.html#folk"
+                  class="btn btn-outline-danger btn-sm w-50"
+                  >View Details</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- 13. Ballet -->
+          <div class="col-lg-4 col-md-6 class-item" data-category="western">
+            <div class="card border-0 shadow-sm h-100 class-card">
+              <img src="ballet.jpg" class="card-img-top" alt="Ballet" />
+              <div class="card-body p-4">
+                <span class="badge bg-primary mb-2">Western</span>
+                <h5 class="fw-bold">Ballet Basics</h5>
+                <p class="text-muted small">
+                  Foundation of all dance forms. Posture, grace, flexibility
+                  training.
+                </p>
+                <div
+                  class="d-flex justify-content-between text-muted small mb-3"
+                >
+                  <span><i class="bi bi-person"></i> 5+ Years</span>
+                  <span><i class="bi bi-clock"></i> Tue, Thu</span>
+                </div>
+                <a
+                  href="classes.html#ballet"
+                  class="btn btn-outline-danger btn-sm w-50"
+                  >View Details</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- 14. Wedding Choreo -->
+          <div class="col-lg-4 col-md-6 class-item" data-category="western">
+            <div class="card border-0 shadow-sm h-100 class-card">
+              <img
+                src="weddingchreography.jpg"
+                class="card-img-top"
+                alt="Wedding Choreography"
+              />
+              <div class="card-body p-4">
+                <span class="badge bg-warning text-dark mb-2"
+                  >Special Batch</span
+                >
+                <h5 class="fw-bold">Wedding Choreography</h5>
+                <p class="text-muted small">
+                  Custom sangeet dances for bride, groom & family. 1-2 month
+                  crash course.
+                </p>
+                <div
+                  class="d-flex justify-content-between text-muted small mb-3"
+                >
+                  <span><i class="bi bi-people"></i> 2-20 Members</span>
+                  <span><i class="bi bi-clock"></i> Flexible</span>
+                </div>
+                <a
+                  href="classes.html#wedding"
+                  class="btn btn-outline-danger btn-sm w-50"
+                  >View Details</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- 15. Belly Dance -->
+          <div class="col-lg-4 col-md-6 class-item" data-category="fitness">
+            <div class="card border-0 shadow-sm h-100 class-card">
+              <img
+                src="bellydance.jpg"
+                class="card-img-top"
+                alt="Belly Dance"
+              />
+              <div class="card-body p-4">
+                <span class="badge bg-success mb-2">Fitness</span>
+                <h5 class="fw-bold">Belly Dance</h5>
+                <p class="text-muted small">
+                  Middle Eastern dance. Core strengthening, isolations &
+                  shimmies.
+                </p>
+                <div
+                  class="d-flex justify-content-between text-muted small mb-3"
+                >
+                  <span><i class="bi bi-person"></i> 16+ Years</span>
+                  <span><i class="bi bi-clock"></i> Fri, Sun</span>
+                </div>
+                <a
+                  href="classes.html#belly"
+                  class="btn btn-outline-danger btn-sm w-50"
+                  >View Details</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Page Header -->
+    <section class="bg-danger text-white py-5">
+      <div class="container text-center">
+        <h1 class="display-5 fw-bold">Meet Our Faculty</h1>
+        <p class="lead">
+          Expert instructors with 10+ years experience in classical & western
+          dance
+        </p>
+      </div>
+    </section>
+
+    <!-- Founder Section -->
+    <section class="py-5">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-4 text-center">
+            <img
+              src="kalesha2.jpeg"
+              class="img-fluid rounded-circle shadow-lg"
+              alt="Founder"
+              style="width: 280px; height: 280px; object-fit: cover"
+            />
+          </div>
+          <div class="col-lg-8">
+            <span class="badge bg-danger mb-2">FOUNDER & DIRECTOR</span>
+            <h2 class="display-6 fw-bold mb-3">Smt. Priya Sharma</h2>
+            <p class="text-muted mb-3">
+              <i class="bi bi-award text-danger"></i> Bharatanatyam Visharad |
+              20+ Years Experience
+            </p>
+            <p class="lead">
+              Trained under Padma Shri Guru Smt. Vempati Chinna Satyam.
+              Performed at 500+ stages across India and abroad. Certified
+              examiner for Pracheen Kala Kendra.
+            </p>
+            <p class="text-muted">
+              Founded RhythmStep in 2015 with a vision to make quality dance
+              education accessible. Specializes in Bharatanatyam, Kuchipudi, and
+              choreography for competitions.
+            </p>
+            <div class="d-flex gap-2">
+              <a href="#" class="btn btn-outline-danger btn-sm"
+                ><i class="bi bi-instagram"></i
+              ></a>
+              <a href="#" class="btn btn-outline-danger btn-sm"
+                ><i class="bi bi-facebook"></i
+              ></a>
+              <a href="#" class="btn btn-outline-danger btn-sm"
+                ><i class="bi bi-youtube"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Faculty Grid -->
+    <section class="py-5 bg-light">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h6 class="text-danger fw-bold">OUR INSTRUCTORS</h6>
+          <h2 class="display-6 fw-bold">Expert Dance Teachers</h2>
+          <p class="text-muted">
+            All faculty are certified professionals with stage experience
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <!-- Teacher 1: Kathak -->
+          <div class="col-lg-3 col-md-6">
+            <div class="card border-0 shadow-sm h-100 text-center team-card">
+              <img
+                src="balu.jpeg"
+                class="card-img-top"
+                alt="Kathak Teacher"
+                style="height: 300px; object-fit: cover"
+              />
+              <div class="card-body p-4">
+                <h5 class="fw-bold mb-1">Guru Rajesh Mishra</h5>
+                <p class="text-danger small mb-2">Kathak Instructor</p>
+                <p class="text-muted small mb-3">
+                  Lucknow Gharana | 15 Years Experience<br />Doordarshan Grade
+                  Artist
+                </p>
+                <div class="d-flex justify-content-center gap-2">
+                  <a href="#" class="text-muted"
+                    ><i class="bi bi-instagram"></i
+                  ></a>
+                  <a href="#" class="text-muted"
+                    ><i class="bi bi-facebook"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Teacher 2: Hip-Hop -->
+          <div class="col-lg-3 col-md-6">
+            <div class="card border-0 shadow-sm h-100 text-center team-card">
+              <img
+                src="manohar.jpeg"
+                class="card-img-top"
+                alt="Hip Hop Teacher"
+                style="height: 300px; object-fit: cover"
+              />
+              <div class="card-body p-4">
+                <h5 class="fw-bold mb-1">Arjun Reddy</h5>
+                <p class="text-danger small mb-2">Hip-Hop & Street Dance</p>
+                <p class="text-muted small mb-3">
+                  National Level Winner | 12 Years Experience<br />Dance India
+                  Dance Finalist
+                </p>
+                <div class="d-flex justify-content-center gap-2">
+                  <a href="#" class="text-muted"
+                    ><i class="bi bi-instagram"></i
+                  ></a>
+                  <a href="#" class="text-muted"
+                    ><i class="bi bi-youtube"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Teacher 3: Contemporary -->
+          <div class="col-lg-3 col-md-6">
+            <div class="card border-0 shadow-sm h-100 text-center team-card">
+              <img
+                src="images/faculty3.jpg"
+                class="card-img-top"
+                alt="Contemporary Teacher"
+                style="height: 300px; object-fit: cover"
+              />
+              <div class="card-body p-4">
+                <h5 class="fw-bold mb-1">Sneha Kapoor</h5>
+                <p class="text-danger small mb-2">Contemporary & Ballet</p>
+                <p class="text-muted small mb-3">
+                  Royal Academy of Dance Certified<br />10 Years Experience | UK
+                  Trained
+                </p>
+                <div class="d-flex justify-content-center gap-2">
+                  <a href="#" class="text-muted"
+                    ><i class="bi bi-instagram"></i
+                  ></a>
+                  <a href="#" class="text-muted"
+                    ><i class="bi bi-facebook"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Teacher 4: Bollywood -->
+          <div class="col-lg-3 col-md-6">
+            <div class="card border-0 shadow-sm h-100 text-center team-card">
+              <img
+                src="images/faculty4.jpg"
+                class="card-img-top"
+                alt="Bollywood Teacher"
+                style="height: 300px; object-fit: cover"
+              />
+              <div class="card-body p-4">
+                <h5 class="fw-bold mb-1">Rahul Verma</h5>
+                <p class="text-danger small mb-2">Bollywood & Jazz Funk</p>
+                <p class="text-muted small mb-3">
+                  Choreographer for TV Shows<br />14 Years Experience | Mumbai
+                  Trained
+                </p>
+                <div class="d-flex justify-content-center gap-2">
+                  <a href="#" class="text-muted"
+                    ><i class="bi bi-instagram"></i
+                  ></a>
+                  <a href="#" class="text-muted"
+                    ><i class="bi bi-youtube"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Teacher 5: Kuchipudi -->
+          <div class="col-lg-3 col-md-6">
+            <div class="card border-0 shadow-sm h-100 text-center team-card">
+              <img
+                src="images/faculty5.jpg"
+                class="card-img-top"
+                alt="Kuchipudi Teacher"
+                style="height: 300px; object-fit: cover"
+              />
+              <div class="card-body p-4">
+                <h5 class="fw-bold mb-1">Smt. Lakshmi Devi</h5>
+                <p class="text-danger small mb-2">Kuchipudi Instructor</p>
+                <p class="text-muted small mb-3">
+                  Natyacharya | 18 Years Experience<br />All India Radio Artist
+                </p>
+                <div class="d-flex justify-content-center gap-2">
+                  <a href="#" class="text-muted"
+                    ><i class="bi bi-facebook"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Teacher 6: Zumba -->
+          <div class="col-lg-3 col-md-6">
+            <div class="card border-0 shadow-sm h-100 text-center team-card">
+              <img
+                src="images/faculty6.jpg"
+                class="card-img-top"
+                alt="Zumba Teacher"
+                style="height: 300px; object-fit: cover"
+              />
+              <div class="card-body p-4">
+                <h5 class="fw-bold mb-1">Kavya Nair</h5>
+                <p class="text-danger small mb-2">Zumba & Aerobics</p>
+                <p class="text-muted small mb-3">
+                  ZIN Licensed Instructor | 8 Years<br />Certified Fitness
+                  Trainer
+                </p>
+                <div class="d-flex justify-content-center gap-2">
+                  <a href="#" class="text-muted"
+                    ><i class="bi bi-instagram"></i
+                  ></a>
+                  <a href="#" class="text-muted"
+                    ><i class="bi bi-facebook"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Teacher 7: Salsa -->
+          <div class="col-lg-3 col-md-6">
+            <div class="card border-0 shadow-sm h-100 text-center team-card">
+              <img
+                src="images/faculty7.jpg"
+                class="card-img-top"
+                alt="Salsa Teacher"
+                style="height: 300px; object-fit: cover"
+              />
+              <div class="card-body p-4">
+                <h5 class="fw-bold mb-1">David Fernandes</h5>
+                <p class="text-danger small mb-2">Salsa & Bachata</p>
+                <p class="text-muted small mb-3">
+                  International Latin Dance Certified<br />11 Years Experience |
+                  Goa Trained
+                </p>
+                <div class="d-flex justify-content-center gap-2">
+                  <a href="#" class="text-muted"
+                    ><i class="bi bi-instagram"></i
+                  ></a>
+                  <a href="#" class="text-muted"
+                    ><i class="bi bi-youtube"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Teacher 8: Kids Dance -->
+          <div class="col-lg-3 col-md-6">
+            <div class="card border-0 shadow-sm h-100 text-center team-card">
+              <img
+                src="images/faculty8.jpg"
+                class="card-img-top"
+                alt="Kids Dance Teacher"
+                style="height: 300px; object-fit: cover"
+              />
+              <div class="card-body p-4">
+                <h5 class="fw-bold mb-1">Meera Singh</h5>
+                <p class="text-danger small mb-2">Kids Freestyle Specialist</p>
+                <p class="text-muted small mb-3">
+                  Child Psychology Certified<br />9 Years Experience |
+                  Montessori Trained
+                </p>
+                <div class="d-flex justify-content-center gap-2">
+                  <a href="#" class="text-muted"
+                    ><i class="bi bi-instagram"></i
+                  ></a>
+                  <a href="#" class="text-muted"
+                    ><i class="bi bi-facebook"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Join Our Team CTA -->
+    <section class="py-5 bg-danger text-white">
+      <div class="container text-center">
+        <h2 class="fw-bold mb-3">Want to Teach With Us?</h2>
+        <p class="lead mb-4">
+          We're always looking for passionate, certified dance instructors
+        </p>
+        <a href="contact.html" class="btn btn-light btn-lg px-5">Apply Now</a>
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="Home.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Simple Navbar -->
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top">
+      <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand fw-bold text-danger fs-4" href="Home.html">
+          SK Academy
+        </a>
+
+        <!-- Mobile Menu Button -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navMenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Menu Links -->
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="Home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="About.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="classes.html">Classes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item ms-lg-3">
+              <a class="btn btn-danger px-4" href="contact.html">Join Now</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Enquiry Form Card -->
+    <div class="card border-0 shadow-lg">
+      <div class="card-body p-4 p-lg-5">
+        <h3 class="fw-bold mb-2">Book Free Trial Class</h3>
+        <p class="text-muted mb-4">
+          Fill the form and we'll call you within 24 hours
+        </p>
+
+        <form id="contactForm" class="needs-validation" novalidate>
+          <div class="row g-3">
+            <!-- Student Name -->
+            <div class="col-md-6">
+              <label for="studentName" class="form-label">Student Name *</label>
+              <input
+                type="text"
+                class="form-control"
+                id="studentName"
+                placeholder="Enter full name"
+                required
+              />
+              <div class="invalid-feedback">Please enter student name.</div>
+            </div>
+
+            <!-- Age -->
+            <div class="col-md-6">
+              <label for="age" class="form-label">Age *</label>
+              <input
+                type="number"
+                class="form-control"
+                id="age"
+                placeholder="Age"
+                min="3"
+                max="60"
+                required
+              />
+              <div class="invalid-feedback">Age must be 3-60 years.</div>
+            </div>
+
+            <!-- Parent Name -->
+            <div class="col-md-6">
+              <label for="parentName" class="form-label"
+                >Parent/Guardian Name</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="parentName"
+                placeholder="For students below 18"
+              />
+            </div>
+
+            <!-- Phone -->
+            <div class="col-md-6">
+              <label for="phone" class="form-label">Phone Number *</label>
+              <input
+                type="tel"
+                class="form-control"
+                id="phone"
+                placeholder="+91 90632 35498"
+                required
+              />
+              <div class="invalid-feedback">Enter valid 10-digit number.</div>
+            </div>
+
+            <!-- Email -->
+            <div class="col-12">
+              <label for="email" class="form-label">Email Address</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="your@email.com"
+              />
+              <div class="invalid-feedback">Enter valid email.</div>
+            </div>
+
+            <!-- Dance Style -->
+            <div class="col-md-6">
+              <label for="danceStyle" class="form-label"
+                >Interested Dance Style *</label
+              >
+              <select class="form-select" id="danceStyle" required>
+                <option value="">Select Class</option>
+                <option>Bharatanatyam</option>
+                <option>Kathak</option>
+                <option>Kuchipudi</option>
+                <option>Odissi</option>
+                <option>Hip-Hop</option>
+                <option>Contemporary</option>
+                <option>Jazz Funk</option>
+                <option>Bollywood</option>
+                <option>Salsa & Bachata</option>
+                <option>Ballet</option>
+                <option>Zumba</option>
+                <option>Aerobics</option>
+                <option>Belly Dance</option>
+                <option>Kids Freestyle</option>
+                <option>Wedding Choreography</option>
+              </select>
+              <div class="invalid-feedback">Please select a dance style.</div>
+            </div>
+
+            <!-- Batch Time -->
+            <div class="col-md-6">
+              <label for="batchTime" class="form-label"
+                >Preferred Batch Time</label
+              >
+              <select class="form-select" id="batchTime">
+                <option>Morning 7-9 AM</option>
+                <option>Evening 4-6 PM</option>
+                <option>Evening 6-8 PM</option>
+                <option>Weekend Only</option>
+                <option>Flexible</option>
+              </select>
+            </div>
+
+            <!-- Message -->
+            <div class="col-12">
+              <label for="message" class="form-label">Message</label>
+              <textarea
+                class="form-control"
+                id="message"
+                rows="3"
+                placeholder="Any questions or specific requirements?"
+              ></textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="col-12">
+              <button type="submit" class="btn btn-danger btn-md w-75">
+                <i class="bi bi-send me-2"></i>Submit Enquiry
+              </button>
+              <p class="text-muted small mt-2 mb-0 text-center">
+                <i class="bi bi-shield-check"></i> Your data is safe. No spam
+                calls.
+              </p>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- Contact Info Cards -->
+    <div class="row g-4 mb-5">
+      <!-- Address Card -->
+      <div class="col-lg-4">
+        <div class="card border-0 shadow-sm h-100 text-center p-4">
+          <div
+            class="bg-danger text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3 mx-auto"
+            style="width: 60px; height: 60px"
+          >
+            <i class="bi bi-geo-alt fs-4"></i>
+          </div>
+          <h5 class="fw-bold mb-3">Visit Our Studio</h5>
+          <p class="text-muted mb-0">
+            SK Dance Academy<br />
+            2nd Floor, Above SBI Bank<br />
+            Main Road, Annmaiah Circle,Tirupati<br />
+            Andhra Pradesh - 517501
+          </p>
+          <a target="_blank" class="btn btn-outline-danger btn-sm mt-3 w-50">
+            Get Directions <i class="bi bi-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Phone Card -->
+      <div class="col-lg-4">
+        <div class="card border-0 shadow-sm h-100 text-center p-4">
+          <div
+            class="bg-danger text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3 mx-auto"
+            style="width: 60px; height: 60px"
+          >
+            <i class="bi bi-telephone fs-4"></i>
+          </div>
+          <h5 class="fw-bold mb-3">Call Us</h5>
+          <p class="text-muted mb-2">
+            <strong>Admissions:</strong><br />
+            <a href="tel:9063235498" class="text-decoration-none text-dark"
+              >+91 90632 35498</a
+            >
+          </p>
+          <p class="text-muted mb-0">
+            <strong>Enquiry:</strong><br />
+            <a href="tel:9876543211" class="text-decoration-none text-dark"
+              >+91 90632 35498</a
+            >
+          </p>
+          <a class="btn btn-success btn-sm mt-3 w-50">
+            <i class="bi bi-whatsapp"></i> WhatsApp
+          </a>
+        </div>
+      </div>
+
+      <!-- Email Card -->
+      <div class="col-lg-4">
+        <div class="card border-0 shadow-sm h-100 text-center p-4">
+          <div
+            class="bg-danger text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3 mx-auto"
+            style="width: 60px; height: 60px"
+          >
+            <i class="bi bi-envelope fs-4"></i>
+          </div>
+          <h5 class="fw-bold mb-3">Email Us</h5>
+          <p class="text-muted mb-2">
+            <strong>General Info:</strong><br />
+            <a
+              href="mailto:info@rhythmstep.com"
+              class="text-decoration-none text-dark"
+              >info@skacdemy.com</a
+            >
+          </p>
+          <p class="text-muted mb-0">
+            <strong>Admissions:</strong><br />
+            <a
+              href="mailto:admissions@rhythmstep.com"
+              class="text-decoration-none text-dark"
+              >admissions@skacademy.com</a
+            >
+          </p>
+          <a
+            href="mailto:info@itt.com"
+            class="btn btn-outline-danger btn-sm mt-3 w-50"
+          >
+            Send Email <i class="bi bi-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

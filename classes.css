@@ -1,0 +1,41 @@
+.web-name {
+  margin-right: 100px;
+}
+.btn {
+  margin-left: 100px;
+}
+.navbar {
+  font-size: 20px;
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+}
+.nav-link {
+  margin-left: 20px;
+  color: white;
+}
+.class-card {
+  transition: all 0.3s ease;
+}
+.class-card:hover {
+  transform: translateY(-10px);
+}
+.class-card img {
+  height: 220px;
+  object-fit: cover;
+}
+.kathak {
+  height: 600px;
+}
+.team-card {
+  transition: all 0.3s ease;
+}
+.team-card:hover {
+  transform: translateY(-10px);
+}
+.team-card img {
+  transition: all 0.3s ease;
+}
+.team-card:hover img {
+  opacity: 0.9;
+}

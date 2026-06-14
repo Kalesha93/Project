@@ -1,0 +1,23 @@
+.navbar {
+  font-size: 20px;
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+}
+.nav-link {
+  margin-left: 20px;
+  color: white;
+}
+.class-card {
+  transition: all 0.3s ease;
+}
+.class-card:hover {
+  transform: translateY(-10px);
+}
+.class-card img {
+  height: 220px;
+  object-fit: cover;
+}
+.kathak {
+  height: 600px;
+}
